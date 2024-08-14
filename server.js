@@ -25,9 +25,6 @@ mongoose
   .catch((err) => {
     console.error(`Error connecting to the database. n${err}`);
   });
-app.get("/", (req, res) => {
-  res.send("hello");
-});
 
 // Routes
 const formsRoutes = require("./routes/formRoutes");

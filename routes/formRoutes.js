@@ -4,17 +4,6 @@ const router = express.Router();
 
 // Create a new form
 router.post("/", async (req, res) => {
-  // const data = {
-  //   title: "MyForm",
-  //   fields: [
-  //     {
-  //       id: 118,
-  //       type: "text",
-  //       label: "FullName",
-  //       placeholder: "FullName",
-  //     },
-  //   ],
-  // };
   const { title, fields } = req.body;
   try {
     const newForm = new Form({ title, fields });
